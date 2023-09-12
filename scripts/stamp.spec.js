@@ -20,7 +20,7 @@ test('Stamp', async ({ page }) => {
 
     for (const day of workDays) {
         const stampedDay = page.locator(
-            `//div[contains(@class, "undertime") and .//orgos-column/span[contains(text(), ${day})]]`,
+            `//div[contains(@class, "undertime") and .//orgos-column/span[text()="${day}"]]`,
         );
         const startHours =
             '//orgos-input-simple-time[.//mat-label[contains(text(), "Start")]]//input[@formcontrolname="hour"]';
@@ -39,7 +39,6 @@ test('Stamp', async ({ page }) => {
         await page.locator('//button[text()=" Save "]').click();
     }
 
-    await page.pause();
     if (
         page.locator('//div[./div[text()=" Tracked "]]/div[2]') ==
         page.locator('//div[./div[contains(text(), "Expected ")]]/div[2]')
