@@ -1,0 +1,15 @@
+{
+  "name": "time-stamper",
+  "version": "1.0.0",
+  "description": "automatic time stamping in kenjo with playwright",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.0",
+    "dotenv": "^16.3.1",
+    "prettier": "3.0.1"
+  }
+}
