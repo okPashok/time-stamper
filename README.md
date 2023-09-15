@@ -1,6 +1,6 @@
 # time-stamper
 
-Automatic time stamping in kenjo with playwright (for the previous month) using login via Google account
+Automatic time stamping in kenjo with playwright (for the previous month) using login via Google account  
 Сhrome is used
 
 ## Run
