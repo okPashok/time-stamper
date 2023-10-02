@@ -8,7 +8,7 @@ test('Stamp', async () => {
 
     await page.goto('https://app.kenjo.io/signin');
     await page.locator('//button[.//orgos-column[text()="Sign in with Google"]]').click();
-    await page.locator(`//div[@data-email="${process.env.YOUR_EMAIL}"]`).click();
+    await page.locator(`//div[./div[@data-email="${process.env.YOUR_EMAIL}"]]`).click();
     await page.waitForURL('https://app.kenjo.io/cloud/home');
 
     await page.locator('//span[text()="Attendance"]').click();
